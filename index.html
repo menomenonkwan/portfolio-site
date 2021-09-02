@@ -1,71 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brannon Lee - Portfolio Website</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-
+  <!-- HEADER -->
   <header>
     <div class="logo">
-      <img src="img/devjane.png" alt="">
+      <img src="./images/devbrannon.png" alt="">
     </div>
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"></span>
-    </button>
+ 
+    <svg class="menu" id="menu-btn" viewBox="0 0 27.329 17">
+      <g transform="translate(-415.671 -19)">
+          <line  x1="24.329" transform="translate(417.171 34.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"/>
+          <line x1="24.329" transform="translate(417.171 27.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"/>
+          <line x1="17" transform="translate(424.5 20.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"/>
+      </g>
+    </svg>
+ 
     <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">My Services</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+      <ul class="nav_list">
+        <li class="exit" id="exit-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48.968" height="48.968" viewBox="0 0 48.968 48.968">
+            <g transform="translate(-378.092 -80.939)">
+                <path id="Path_21" data-name="Path 21" d="M383,82l-46.847,46.847" transform="translate(43)" fill="none" stroke="#fefefe" stroke-width="3"/>
+                <path id="Path_22" data-name="Path 22" d="M336.153,82l46.673,46.673" transform="translate(43)" fill="none" stroke="#fefefe" stroke-width="3"/>
+            </g>
+          </svg>
+        </li>
+        <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+        <li class="nav_item"><a href="#services" class="nav_link">My Services</a></li>
+        <li class="nav_item"><a href="#about" class="nav_link">About Me</a></li>
+        <li class="nav_item"><a href="#work" class="nav_link">My Work</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Introduction -->
+
+  <!-- INTRODUCTION -->
   <section class="intro" id="home">
-    <h1 class="section__title section__title--intro">
-      Hi, I am <strong>Brannon Lee</strong>
-    </h1>
-    <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-    <!-- <img src="img/dev-jane-01.jpg" alt="a picture of Jane Smith smiling"> -->
+    <h1 class="section_title section_title-intro">Hi, I am <strong>Brannon Lee</strong></h1>
+    <p class="section_subtitle section_subtitle-intro">front-end dev</p>
+    <img src="./images/prof_img.jpg" alt="Brannon Lee profile" />
   </section>
 
-
-  <!-- My services -->
+  <!-- MY SERVICES -->
   <section class="my-services" id="services">
-    <h2 class="section__title section__title--services">What I do</h2>
+    <h2 class="section_title section_title-services">What I do</h2>
     <div class="services">
       <div class="service">
-        <h3></h3>
-        <p>
-      </div> <!-- / service -->
-
+        <h3>Design + Development</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
       <div class="service">
-        <h3></h3>
-        <p>
-      </div> <!-- / service -->
-
+        <h3>E-Commerce</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
       <div class="service">
-        <h3></h3>
-        <p>
-      </div> <!-- / service -->
-    </div> <!-- / services -->
+        <h3>WordPress</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
 
     <a href="#work" class="btn">My Work</a>
   </section>
 
+  <!-- ABOUT ME -->
+  <section class="about-me" id="about">
+    <h2 class="section_title section_title-about">Who I am</h2>
+    <p class="section_subtitle section__subtitle-about"></p>
+
+    <div class="about-me_body">
+      <p></p>
+      <p></p>
+    </div>
+
+    <img src="images/profile.jpg" alt="Brannon Lee in a stadium">
+  </section>
+
+  <!-- MY WORK -->
+  <section class="my-work" id="work">
+    <h2 class="section_title">My Work</h2>
+    <p class="section_subtitle"></p>
+
+    <div class="portfolio">
+      <!-- PORTFOLIO ITEM 01 -->
+      <a href="#" class="portfolio_item">
+        <img src="images/portfolio-01.png" alt="" class="portfolio_img">
+      </a>
+
+      <!-- PORTFOLIO ITEM 02 -->
+      <a href="#" class="portfolio_item">
+        <img src="images/portfolio-02.png" alt="" class="portfolio_img">
+      </a>
+
+      <!-- PORTFOLIO ITEM 03 -->
+      <a href="#" class="portfolio_item">
+        <img src="images/portfolio-03.png" alt="" class="portfolio_img">
+      </a>
+
+      <!-- PORTFOLIO ITEM 04 -->
+      <a href="#" class="portfolio_item">
+        <img src="images/portfolio-04.png" alt="" class="portfolio_img">
+      </a>
+
+      <!-- PORTFOLIO ITEM 05 -->
+      <a href="#" class="portfolio_item">
+        <img src="images/portfolio-05.png" alt="" class="portfolio_img">
+      </a>
+
+      <!-- PORTFOLIO ITEM 06 -->
+      <a href="#" class="portfolio_item">
+        <img src="images/portfolio-06.png" alt="" class="portfolio_img">
+      </a>
+
+      <!-- PORTFOLIO ITEM 07 -->
+      <a href="#" class="portfolio_item">
+        <img src="images/portfolio-07.png" alt="" class="portfolio_img">
+      </a>
+
+      <!-- PORTFOLIO ITEM 08 -->
+      <a href="#" class="portfolio_item">
+        <img src="images/portfolio-08.png" alt="" class="portfolio_img">
+      </a>
+
+      <!-- PORTFOLIO ITEM 09 -->
+      <a href="#" class="portfolio_item">
+        <img src="images/portfolio-09.png" alt="" class="portfolio_img">
+      </a>
+
+      <!-- PORTFOLIO ITEM 10 -->
+      <a href="#" class="portfolio_item">
+        <img src="images/portfolio-10.png" alt="" class="portfolio_img">
+      </a>
+    </div>
+  </section> 
+
+  <!-- Footer -->
+  <footer>
+    <a href="" class="footer_link">mail@example.com</a>
+    <ul class="social-list">
+        <li class="social-list_item"><a class="social-list_link" href="https://codepen.io/menomenonkwan">a</a></li>
+        <li class="social-list_item">b<a class="social-list_link" href="http://dribbble.com"></a></li>
+        <li class="social-list_item"><a class="social-list_link" href="https://twitter.com">c</a></li>
+        <li class="social-list_item"><a class="social-list_link" href="https://github.com/menomenonkwan">d</a></li>
+    </ul>
+  </footer>  
 
   <script src="scripts.js"></script>
 </body>
-
 </html>
