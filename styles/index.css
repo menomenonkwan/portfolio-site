@@ -13,17 +13,9 @@
   --fw-reg: 300;
   --fw-bold: 900;
 
-  --clr-light: #fefefe;
+  --clr-light: #fee;
   --clr-dark: #303030;
-  --clr-accent: #45a29e;
-  /* --clr-accent: #16e0bd; */
-  /* --main-black: #121212; */
-  /* --main-white: #dddddd; */
-  /* --main-brightblue: #66fcf1; */
-  /* --main-blue: #45a29e; */
-  /* --main-darkblue: #42566c; */
-  /* --main-lightblack: #382d2d; */
-  /* --secondary-color: #eea991; */
+  --clr-accent: #62c06e;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -100,7 +92,8 @@ a {
 
 .btn:hover {
   box-shadow: none;
-  background: #3d8f8b;
+  background: #4d9757;
+  /* background: #3d8f8b; */
 }
 
 /* Typography */

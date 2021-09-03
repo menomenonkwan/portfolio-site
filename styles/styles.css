@@ -65,6 +65,9 @@ nav {
 }
 
 @media (min-width: 700px) {
+  header {
+    height: 10vh;
+  }
   .menu,
   .exit {
     display: none;
@@ -135,6 +138,7 @@ nav {
       "img title"
       "img subtitle";
     grid-template-columns: min-content max-content;
+    min-height: 80vh;
   }
 
   .intro_img {
@@ -222,6 +226,24 @@ nav {
   box-shadow: var(--bs);
 }
 
+.resume {
+  background: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  display: block;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  width: 50%;
+  margin: 0 auto 3rem;
+  box-shadow: var(--bs);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resume:hover {
+  box-shadow: none;
+  background: #4d9757;
+}
+
 @media (min-width: 800px) {
   .about-me {
     display: grid;
@@ -257,6 +279,12 @@ nav {
     position: relative;
     z-index: 2;
   }
+
+  .resume {
+    width: 25%;
+    margin: 0;
+    margin-left: auto;
+  }
 }
 
 /* MY WORK */
@@ -275,7 +303,7 @@ nav {
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  max-width: 350px;
+  max-width: 275px;
   margin: 0 auto;
   gap: 2rem;
 }
@@ -283,17 +311,18 @@ nav {
 .portfolio_item {
   background: var(--clr-accent);
   overflow: hidden;
+  box-shadow: var(--bs);
+  position: relative;
 }
 
 .portfolio_img {
   margin: 0 auto;
   width: 400px;
   height: 250px;
-  box-shadow: var(--bs);
   transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
 
-.portfolio__item:focus {
+.portfolio_item:focus {
   position: relative;
   z-index: 2;
 }
@@ -301,7 +330,33 @@ nav {
 .portfolio_img:hover,
 .portfolio_item:focus .portfolio_img {
   transform: scale(1.2);
-  opacity: 0.75;
+  opacity: 0.15;
+}
+
+.overlay-text {
+  color: var(--clr-dark);
+  font-size: var(--fs-h3);
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  transform: translateY(100%);
+  transition: all 0.5s ease;
+}
+
+.overlay-text span {
+  font-weight: var(--fw-bold);
+}
+
+.portfolio_item:hover {
+  box-shadow: none;
+}
+
+.portfolio_item:hover .overlay-text {
+  transform: translateY(0);
 }
 
 @media (min-width: 600px) {
@@ -315,7 +370,7 @@ footer {
   background: #111;
   color: var(--clr-accent);
   text-align: center;
-  padding: 2.5em 0;
+  padding: 1.5em 0;
   font-size: var(--fs-h3);
 }
 
@@ -341,12 +396,16 @@ footer {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 2em 0 0;
   padding: 0;
 }
 
 .social-list_item {
   margin: 0 0.5em;
+  transition: transform 0.5s ease;
+}
+
+.social-list_item:hover {
+  transform: rotate(25deg);
 }
 
 .social-list_link {
